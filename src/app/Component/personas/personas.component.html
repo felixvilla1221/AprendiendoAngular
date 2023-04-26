@@ -22,6 +22,22 @@
 
       </div>
 
+      <div>
+        <button class="btn btn-primary" [disabled]="estado2" (click)="agregarPersona2()">Agregar Persona2</button>
+      </div>
+
+      <p>
+        {{mensaje2}}
+      </p>
+
+
+      <div>
+        <p>
+           Titulo Persona2:<input class="form-control" type="text" (input)="modificarTitulo2($event)" />
+        </p>
+          EL TITULO DE LA PERSONA ES:{{titulo2}}
+      </div>
+
 
     </div>
   </div>

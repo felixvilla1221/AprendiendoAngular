@@ -9,7 +9,10 @@ export class PersonasComponent implements OnInit {
   // declaracion de variables property binding
   estado:  boolean =    false;
   mensaje: string  =    ' No se ha agregado  Ninguna Persona ';
+  mensaje2: string  =    ' No se ha agregado Ninguna Persona';
   titulo:  string  =    ' ';
+  estado2: boolean =    false;
+  titulo2: string  =    '';
 
   constructor() {}
 
@@ -20,11 +23,23 @@ export class PersonasComponent implements OnInit {
   }
 
 
+  public agregarPersona2(){
+
+    this.mensaje2 = 'Persona 2 Agregada'
+  }
+
+
   public modificarTitulo(event:Event){
-   // alert(event.target + "ES5TE ES MI OBJETO")
 
    this.titulo =(<HTMLInputElement>event.target).value
 
+
+}
+
+
+public modificarTitulo2(event:Event){
+ console.log("ENTRANDO A METODO MODIFICAR TITULO");
+  this.titulo2 = (<HTMLInputElement>event.target).value
 
 }
 
